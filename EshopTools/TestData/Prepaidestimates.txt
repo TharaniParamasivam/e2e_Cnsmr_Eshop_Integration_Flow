@@ -1,0 +1,92 @@
+{
+  "propertyInformation": {
+    "addressLine1": "8832 S CARR WAY",
+    "addressLine2": null,
+    "city": "LITTLETON",
+    "stateProvince": "CO",
+    "country": "USA",
+    "postalCode": "80128"
+  },
+  "offerDetailsList": {
+    "offerDetails": [
+      {
+        "categoryName": "INTERNET",
+        "offerName": "HSI Upto 60 Mbps/5 Mbps",
+        "offerPrice": 55.0,
+        "offerQuantity": 1,
+        "specialDiscountsList": [
+          {
+            "specialDiscount": [
+              {
+                "accountDiscountId": 1000,
+                "discountCode": "8301P",
+                "discountReason": "$6 Discount with Paperless (Ongoing)",
+                "discountAmount": 6.0,
+                "discountStartDate": "2019-10-10",
+                "discountEndDate": "2020-10-10",
+                "action": "ADD"
+              }
+            ]
+          }
+        ],
+        "productId": "EP0015",
+        "otc": false,
+        "priceKey": "ES00986~EC00986~PP000537~HSI Upto 60 Mbps/5 Mbps~Technology=NONE",
+        "offerCategory": "CORE"
+      },
+      {
+        "categoryName": "INTERNET",
+        "offerName": "TECH INSTALL",
+        "offerPrice": 99.0,
+        "offerQuantity": 1,
+        "specialDiscountsList": [
+          
+        ],
+        "productId": "EP0020",
+        "otc": true,
+        "priceKey": "ES00986~EC00986~PP000537~TECH INSTALL~Service Level=Standard",
+        "offerCategory": "TECHINST"
+      },
+      {
+        "categoryName": "INTERNET",
+        "offerName": "MODEM(Lease)",
+        "offerPrice": 10.0,
+        "offerQuantity": 1,
+        "specialDiscountsList": [
+          
+        ],
+        "productId": "EP0019",
+        "otc": false,
+        "priceKey": "ES00986~EC00986~PP000537~MODEM~Account Type=Lease::Modem Class=PREMIUM::Cyber Security=Disabled",
+        "offerCategory": "EQP"
+      },
+      {
+        "categoryName": "INTERNET",
+        "offerName": "CENTURYLINK @ EASE",
+        "offerPrice": 0.0,
+        "offerQuantity": 1,
+        "specialDiscountsList": [
+          
+        ],
+        "productId": "EP0023",
+        "otc": false,
+        "offerCategory": "VAS"
+      }
+    ],
+    "subTotalCharges": 0.0,
+    "subTotalTaxes": 0.0,
+    "subTotalSpecialDiscounts": 0.0,
+    "totalCharges": 0.0
+  },
+  "discountPlanDetails": null,
+  "accountID": "PPB11040847",
+  "legacyProvisioningSourceSystem": "LQ",
+  "accountType": "CX",
+  "customerOrderType": "NEWINSTALL",
+  "lastCustomerOrderNumber": null,
+  "orderReferenceNumber": "ORN-6627022430107247",
+  "userDetail": null,
+  "accountStatus": null,
+  "salesId": null,
+  "supType": null
+}  

@@ -1,0 +1,29 @@
+{
+   "offerDetailsList":{
+      "offerDetails":[
+         {
+            "categoryName":"INTERNET",
+            "offerName":"HSI Upto 30 Mbps/1.5 Mbps",
+            "offerPrice":50.0,
+            "offerQuantity":1,
+            "legacyProvIDType":"TRANSPORT",
+            "productId":"EP0011",
+            "otc":false,
+            "priceKey":"ES00169~EC00169~PP000105~HSI Upto 30 Mbps/1.5 Mbps~Technology=NONE"
+         },
+         {
+            "categoryName":"INTERNET",
+            "offerName":"CENTURYLINK @ EASE",
+            "offerQuantity":1,
+            "productId":"EP0023",
+            "otc":false
+         }
+      ],
+      "subTotalCharges":0.0,
+      "subTotalTaxes":0.0,
+      "subTotalSpecialDiscounts":0.0,
+      "totalCharges":0.0
+   },
+   "accountID":"PPB11040035",
+   "orderReferenceNumber":"ORN-20545354753265204"
+}

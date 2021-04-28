@@ -1,0 +1,41 @@
+{
+	"_id" : "981211087091031_1",
+	"_class" : "com.ctl.bm.service.FFWF_business_service.model.EnjvRequestWrapper",
+	"enjEventMessageRequest" : {
+		"requestId" : "981211087091031_1",
+		"sendTimeStamp" : {
+			"_class" : "com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl",
+			"year" : 2019,
+			"month" : 8,
+			"day" : 20,
+			"timezone" : 0,
+			"hour" : 23,
+			"minute" : 1,
+			"second" : 56,
+			"fractionalSecond" : "0.701"
+		},
+		"messageSrcSystem" : "BM",
+		"salesOrderNumber" : "2000000303",
+		"serviceOrderNumber" : [ ],
+		"ban" : "0000680594927",
+		"enjEventType" : "START",
+		"enjEventName" : "BM_Order_Fulfillment",
+		"enjEventParameters" : {
+			"enjParameter" : [
+				{
+					"value" : "HSI",
+					"name" : "Service_Group"
+				},
+				{
+					"value" : "SI",
+					"name" : "Sub_Service_Group"
+				},
+				{
+					"value" : "I",
+					"name" : "Customer_Type"
+				}
+			]
+		},
+		"enjOrderContent" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<SAP xmlns=\"http://iom.qwest.com/explainer/structure/XMLSchema\">\n    <HEADER>\n        <TRANSACTION_ID>2000000303_1</TRANSACTION_ID>\n        <DATE_TIME>20190820</DATE_TIME>\n        <USER_ID>7281767</USER_ID>\n        <PROGRAM_INVOKED_BY>BLUEMARBLE</PROGRAM_INVOKED_BY>\n    </HEADER>\n    <SAP_MATERIAL_CODE>1354259</SAP_MATERIAL_CODE>\n    <QUANTITY>1</QUANTITY>\n    <ORDER_DATE>20190820</ORDER_DATE>\n    <DESIRED_DEL_DATE>20190904</DESIRED_DEL_DATE>\n    <SUBMARKET>B2608</SUBMARKET>\n    <COMPANY_NUMBER>S600</COMPANY_NUMBER>\n    <PRIMARY_INVENTORY_LOC>5500</PRIMARY_INVENTORY_LOC>\n    <NAME>\n        <LAST_BUSINESS_NAME>ahmer</LAST_BUSINESS_NAME>\n        <FIRST_NAME>james</FIRST_NAME>\n        <MIDDLE_INITIAL></MIDDLE_INITIAL>\n        <NAME_TITLE></NAME_TITLE>\n    </NAME>\n    <ADDRESS>\n        <STREET_ADDRESS>\n            <HOUSE_NUMBER>611</HOUSE_NUMBER>\n            <STREET_NAME>FENWICK</STREET_NAME>\n            <STREET_SUFFIX></STREET_SUFFIX>\n            <POBOX>68046</POBOX>\n        </STREET_ADDRESS>\n        <CITY>PAPILLION</CITY>\n        <STATE>NE</STATE>\n        <ZIP_CODE>68046</ZIP_CODE>\n        <EMAIL>jm213@mail.com</EMAIL>\n    </ADDRESS>\n    <SHIP_METHOD>6</SHIP_METHOD>\n    <SHIP_INSTRUCTION></SHIP_INSTRUCTION>\n    <COMMENTS_REMARKS></COMMENTS_REMARKS>\n    <VENDOR_NUMBER>S0025500</VENDOR_NUMBER>\n    <PURCHASE_LEASE_IND>L</PURCHASE_LEASE_IND>\n    <ORDER_NUMBER>S6NEINTR21</ORDER_NUMBER>\n    <SER_INVENTORY_FLAG></SER_INVENTORY_FLAG>\n    <PRINT_COMMENTS_REMARKS>Y</PRINT_COMMENTS_REMARKS>\n    <REQ_ID></REQ_ID>\n    <IP_USER_ID></IP_USER_ID>\n    <IP_PASS_WORD></IP_PASS_WORD>\n    <ESTIMATED_DUE_DATE>20190826</ESTIMATED_DUE_DATE>\n    <SERIAL_NO></SERIAL_NO>\n    <BAN>0000680594927</BAN>\n    <ASSOC_PROD_ID>4025921304</ASSOC_PROD_ID>\n    <WELCOME_LETTER></WELCOME_LETTER>\n    <QUICK_CONNECT></QUICK_CONNECT>\n    <ITEM_ID></ITEM_ID>\n    <REQUEST_ID>981211087091031_1</REQUEST_ID>\n    <KGP_PRODUCT_TYPE>BROADBAND</KGP_PRODUCT_TYPE>\n</SAP>\n"
+	}
+}

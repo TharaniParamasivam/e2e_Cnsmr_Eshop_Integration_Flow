@@ -1,0 +1,9 @@
+{
+  "ban": "680663670",
+  "customerOrderNumber": "2000005681",
+  "orderReferenceNumber": "ORN-9739713612644819",
+  "orderStatusList": [
+    "HOLD"
+  ],
+  "requestedTelephoneNumber": "6087870169"
+}

@@ -1,0 +1,19 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ret="http://www.ctl.com/cds/retrievecustomerDataXMLSchema" xmlns:bim="http://www.qwest.com/XMLSchema/BIM">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ret:RetrieveCustomerDataRequest>
+         <bim:AuthenticationInfo>
+            <bim:AuthenticationId>BMPAPP</bim:AuthenticationId>
+            <bim:AuthenticationPassword>PPAPMB</bim:AuthenticationPassword>
+         </bim:AuthenticationInfo>
+         <bim:TargetSchemaVersionUsed>
+            <bim:TargetXSDName>RetrieveCustomerDataResponse</bim:TargetXSDName>
+            <bim:MajorVersionNumber>1</bim:MajorVersionNumber>
+            <bim:MinorVersionNumber>1</bim:MinorVersionNumber>
+         </bim:TargetSchemaVersionUsed>
+         <ret:CustomerAccountNumber>PPB00657010</ret:CustomerAccountNumber> 
+        <ret:CustomerAccountSystem>PREPAID</ret:CustomerAccountSystem> 
+         <ret:MessageSrcSystem>BMPAPP</ret:MessageSrcSystem>
+      </ret:RetrieveCustomerDataRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

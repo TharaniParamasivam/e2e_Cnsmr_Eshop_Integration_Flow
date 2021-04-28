@@ -1,0 +1,10 @@
+{
+  "correlationID": "string",
+  "customerServiceOrderNumber": "CSNO-19669753236678170",
+  "message": "string",
+  "newDueDate": "string",
+  "notificationType": "string",
+  "offering": "string",
+  "publicUserId": "string",
+  "status": "string"
+}

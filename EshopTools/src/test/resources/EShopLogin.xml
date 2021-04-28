@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container name="root">
+	<container name="Environments">
+		<container name="TEST1">
+				<field name="url" value="https://ctl-consumer--pp1uat.lightning.force.com/"></field>
+			    <container name="EshopLoginPage">
+				<container name="Valid">
+					<field name="tbx_username" value="AB72075" type="mandatory" />
+                    <field name="tbx_password" value="Sept~%1234" type="mandatory" />    
+				</container>
+			</container>
+			</container>
+		
+		<container name="TEST2">
+           <field name="url" value="https://ctl-consumer--pp2uat.lightning.force.com/"></field>
+			<container name="EshopLoginPage">
+				<container name="Valid">
+					<field name="tbx_username" value="AB72075" type="mandatory" />
+					<field name="tbx_password" value="Sept~%1234" type="mandatory" />
+				</container>
+			</container>
+	  </container>
+	  
+	  <container name="TEST4">
+           <field name="url" value="https://ctl-consumer--pp4uat.my.salesforce.com/"></field>
+			<container name="EshopLoginPage">
+				<container name="Valid">
+					<field name="tbx_username" value="AB72075" type="mandatory" />
+					<field name="tbx_password" value="Sept~%1234" type="mandatory" />
+				</container>
+			</container>
+	  </container>
+	  
+	  <container name="PRODUCTION">    
+	<field name="url" value="https://ctl-consumer.lightning.force.com/lightning/"></field>
+			<container name="EshopLoginPage">
+				<container name="Valid">
+					<field name="tbx_username" value="autoregr" type="mandatory" />
+					<field name="tbx_password" value="fCnvLbQdk2VgxXmfn1h5FkSB" type="mandatory" />
+				</container>
+			</container>
+	  </container>
+	  
+<!-- 	<container name="E2E">
+			<field name="url" value="https://eshop-e2e.test.intranet/eshop/customerCare/dist/"></field>
+			<container name="EshopLoginPage">
+				<container name="Valid">
+                    <field name="tbx_username" value="ossprov" type="mandatory" />
+					<field name="tbx_password" value="Ri6nviv4" type="mandatory" />             
+				</container>
+			</container>
+	  </container> -->
+	 
+	</container>
+</container>

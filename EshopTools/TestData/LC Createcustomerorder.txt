@@ -1,0 +1,813 @@
+{
+  "orderDocument": {
+    "accountInfo": {
+      "accountName": {
+        "businessName": "string",
+        "firstName": "Santhosh",
+        "generation": "string",
+        "lastName": "Gupta",
+        "middleName": "V",
+        "title": "string"
+      },
+      "accountPin": "string",
+      "accountPreferences": {
+        "braille": true,
+        "emailNotification": {
+          "billingNotification": true,
+          "orderingNotification": true,
+          "repairNotification": true
+        },
+        "largePrint": true,
+        "noDirectMail": true,
+        "noEmail": true,
+        "noTeleMarketing": true,
+        "paperlessBilling": true,
+        "spanishBillPrint": true,
+        "textNotification": {
+          "billingNotification": true,
+          "orderingNotification": true,
+          "repairNotification": true
+        }
+      },
+      "accountSubType": "string",
+      "accountType": "string",
+      "ban": "780663670",
+      "billCycle": 2,
+      "billingAdditionalInfo": "string",
+      "billingAddress": {
+        "city": "string",
+        "country": "string",
+        "isValidated": true,
+        "locality": "string",
+        "locationAttributes": {
+          "cala": "string",
+          "isMdu": true,
+          "legacyProvider": "string",
+          "npa": "string",
+          "nxx": "string",
+          "rateCenter": "string",
+          "tarCode": "string",
+          "tta": "string",
+          "wirecenter": "string"
+        },
+        "postCode": "string",
+        "postCodeSuffix": "string",
+        "source": "string",
+        "stateOrProvince": "string",
+        "streetAddress": "string",
+        "streetName": "string",
+        "streetNamePrefix": "string",
+        "streetNrFirst": "string",
+        "streetNrFirstSuffix": "string",
+        "streetType": "string",
+        "subAddress": {
+          "combinedDesignator": "string",
+          "elements": [
+            {
+              "designator": "string",
+              "value": "string"
+            }
+          ],
+          "geoSubAddressId": "string",
+          "source": "string",
+          "sourceId": "string"
+        }
+      },
+      "billingAddressType": "string",
+      "billingType": "string",
+      "contact": {
+        "contactNumber": "string",
+        "emailAddrDeclined": true,
+        "emailAddress": "string",
+        "smsNumber": "string"
+      },
+      "creditClass": "string",
+      "geoCode": "string",
+      "isBillAddrSameAsServiceAddress": true,
+      "personalDetails": {
+        "creditCheck": true,
+        "dLExpirationDate": "string",
+        "dLlicenseNo": "string",
+        "dLlicenseState": "string",
+        "dateOfBirth": "string",
+        "ssn": "string",
+        "taxId": "string",
+        "underAgeAck": true
+      }
+    },
+    "additionalInfo": {
+      "chargeSummaryAck": true,
+      "disableOrderNotification": true,
+      "tpvRecordLocator": "string"
+    },
+    "addlOrderAttributes": [
+      {
+        "orderAttributeGroup": [
+          {
+            "orderAttributeGroupInfo": [
+              {
+                "orderAttributes": [
+                  {
+                    "orderAttributeName": "string",
+                    "orderAttributeValue": "string"
+                  }
+                ]
+              }
+            ],
+            "orderAttributeGroupName": "string"
+          }
+        ]
+      }
+    ],
+    "availableServices": [
+      {
+        "accessType": "string",
+        "iptvPipeRateDownSpeed": "string",
+        "iptvPipeRateUpSpeed": "string",
+        "networkInfrastructureIndicatorCode": "string",
+        "offerCategory": "string",
+        "processInfo": [
+          {
+            "processInfoAttribute": [
+              {
+                "name": "string",
+                "value": "string"
+              }
+            ],
+            "processInfoGroupName": "string"
+          }
+        ],
+        "qualificationColorName": "string",
+        "serviceCategory": "string"
+      }
+    ],
+    "charges": [
+      {
+        "billAmount": 0,
+        "chargeName": "string",
+        "chargeType": "string",
+        "discount": 0,
+        "taxes": 0
+      }
+    ],
+    "creditReview": {
+      "billEstimate": {
+        "quote": [
+          {
+            "quoteId": "string"
+          }
+        ]
+      },
+      "creditApplicationRefNumber": "string",
+      "creditInfo": {
+        "creditClass": "string",
+        "finalBillInd": true,
+        "finalBillInfo": [
+          {
+            "btn": "string",
+            "cusCode": 0,
+            "entityFinalBillFlag": true,
+            "finalBillAddress": {
+              "additionalLocation": "string",
+              "city": "string",
+              "postalCode": "string",
+              "stateOrProvince": "string",
+              "streetAddress": "string"
+            },
+            "finalBillAmt": {
+              "amount": 0
+            },
+            "finalBillDate": "string",
+            "finalBillEntityList": [
+              {
+                "finalBillEntity": {
+                  "dueAmt": 0,
+                  "entityCode": "string"
+                }
+              }
+            ],
+            "finalBillName": "string",
+            "paymentRequiredInd": true,
+            "ssn": "string"
+          }
+        ]
+      },
+      "depositInfo": {
+        "depositRequired": true,
+        "products": [
+          {
+            "depositAmount": {
+              "amount": 0,
+              "units": "string"
+            },
+            "installmentInd": true,
+            "installmentOptions": [
+              {
+                "noOfInstallments": 0,
+                "paymentAmount": 0
+              }
+            ],
+            "productType": "string",
+            "serviceGroup": "string",
+            "subServiceGroup": "string"
+          }
+        ]
+      },
+      "paymentInfo": [
+        {
+          "billingAccountId": "string",
+          "depositPayDate": "string",
+          "paidAmount": 0,
+          "paymentId": "string",
+          "paymentStatusCd": "string",
+          "paymentType": "string",
+          "paymentTypeCode": "string"
+        }
+      ]
+    },
+    "customerOrderItems": [
+      {
+        "action": "string",
+        "catalogId": "string",
+        "contractStartDate": "string",
+        "contractTerm": "string",
+        "customerOrderSubItems": [
+          {
+            "action": "string",
+            "componentType": "string",
+            "productAssociations": [
+              {
+                "productAssociationType": "string",
+                "productIds": [
+                  {
+                    "productId": 0
+                  }
+                ]
+              }
+            ],
+            "productAttributes": [
+              {
+                "compositeAttribute": [
+                  {
+                    "attributeName": "string",
+                    "attributeValue": "string",
+                    "uom": "string"
+                  }
+                ],
+                "discounts": [
+                  {
+                    "autoAttachInd": "string",
+                    "discountCategory": "string",
+                    "discountDescription": "string",
+                    "discountDuration": 0,
+                    "discountId": "string",
+                    "discountIdSequence": 0,
+                    "discountLevel": "string",
+                    "discountMaxAmount": "string",
+                    "discountMethod": "string",
+                    "discountMinimumAmount": "string",
+                    "discountRate": 0,
+                    "discountRule": "string",
+                    "discountType": "string"
+                  }
+                ],
+                "displayOrder": 0,
+                "isDefault": 0,
+                "isPriceable": true,
+                "prices": [
+                  {
+                    "currencyCode": "string",
+                    "discountedOtc": 0,
+                    "discountedRc": 0,
+                    "frequency": "string",
+                    "otc": 0,
+                    "priceKey": "string",
+                    "priceType": "string",
+                    "priceTypeDescription": "string",
+                    "provisioningAction": "string",
+                    "rc": 0
+                  }
+                ]
+              }
+            ],
+            "productCategory": "string",
+            "productId": "string",
+            "productName": "string",
+            "productType": "string",
+            "provisioningAction": "string",
+            "quantity": 0
+          }
+        ],
+        "discountedOtc": 0,
+        "discountedRc": 0,
+        "offerCategory": "string",
+        "offerName": "string",
+        "offerSubType": "string",
+        "offerType": "string",
+        "otc": 0,
+        "productOfferingId": "string",
+        "quantity": 0,
+        "rc": 0
+      }
+    ],
+    "dhpAdditionalInfo": {
+      "dhpDisclaimerAcceptDateTime": "string",
+      "e911Address": {
+        "city": "string",
+        "location": "string",
+        "postCode": "string",
+        "postCodeSuffix": "string",
+        "stateOrProvince": "string",
+        "streetAddress": "string",
+        "streetDirectionPrefix": "string",
+        "streetNrFirst": "string"
+      }
+    },
+    "existingProductConfiguration": [
+      {
+        "configItems": [
+          {
+            "configDetails": [
+              {
+                "formItems": [
+                  {
+                    "attributeName": "string",
+                    "attributeType": "string",
+                    "attributeValue": [
+                      {
+                        "isDefault": true,
+                        "value": "string"
+                      }
+                    ],
+                    "isMandatory": true
+                  }
+                ],
+                "formName": "string",
+                "isConfigRequired": true
+              }
+            ],
+            "productId": "string",
+            "productName": "string"
+          }
+        ],
+        "productType": "string"
+      }
+    ],
+    "existingServiceAddress": {
+      "addressId": "string",
+      "city": "string",
+      "country": "string",
+      "geoAddressId": "string",
+      "geoPoint": [
+        {
+          "accuracy": "string",
+          "coordinateLevel": "string",
+          "latitude": 0,
+          "longitude": 0,
+          "source": "string"
+        }
+      ],
+      "locality": "string",
+      "locationAttributes": {
+        "cala": "string",
+        "isMdu": true,
+        "legacyProvider": "string",
+        "npa": "string",
+        "nxx": "string",
+        "rateCenter": "string",
+        "tarCode": "string",
+        "tta": "string",
+        "wirecenter": "string"
+      },
+      "npaNxxList": [
+        {
+          "npa": {
+            "code": "string"
+          },
+          "nxx": {
+            "code": "string"
+          }
+        }
+      ],
+      "postCode": "string",
+      "postCodeSuffix": "string",
+      "source": "string",
+      "sourceId": "string",
+      "stateOrProvince": "string",
+      "streetAddress": "string",
+      "streetName": "string",
+      "streetNamePrefix": "string",
+      "streetNrFirst": "string",
+      "streetNrFirstSuffix": "string",
+      "streetNrLast": "string",
+      "streetNrLastSuffix": "string",
+      "streetType": "string",
+      "subAddress": {
+        "combinedDesignator": "string",
+        "elements": [
+          {
+            "designator": "string",
+            "value": "string"
+          }
+        ],
+        "geoSubAddressId": "string",
+        "source": "string",
+        "sourceId": "string"
+      },
+      "timeZone": {
+        "ianaName": "string",
+        "isDaylightSavingsTime": true,
+        "name": "string",
+        "offset": "string"
+      }
+    },
+    "existingServices": [
+      {
+        "action": "string",
+        "catalogId": "string",
+        "contractStartDate": "string",
+        "contractTerm": "string",
+        "customerOrderSubItems": [
+          {
+            "action": "string",
+            "componentType": "string",
+            "productAssociations": [
+              {
+                "productAssociationType": "string",
+                "productIds": [
+                  {
+                    "productId": 0
+                  }
+                ]
+              }
+            ],
+            "productAttributes": [
+              {
+                "compositeAttribute": [
+                  {
+                    "attributeName": "string",
+                    "attributeValue": "string",
+                    "uom": "string"
+                  }
+                ],
+                "discounts": [
+                  {
+                    "autoAttachInd": "string",
+                    "discountCategory": "string",
+                    "discountDescription": "string",
+                    "discountDuration": 0,
+                    "discountId": "string",
+                    "discountIdSequence": 0,
+                    "discountLevel": "string",
+                    "discountMaxAmount": "string",
+                    "discountMethod": "string",
+                    "discountMinimumAmount": "string",
+                    "discountRate": 0,
+                    "discountRule": "string",
+                    "discountType": "string"
+                  }
+                ],
+                "displayOrder": 0,
+                "isDefault": 0,
+                "isPriceable": true,
+                "prices": [
+                  {
+                    "currencyCode": "string",
+                    "discountedOtc": 0,
+                    "discountedRc": 0,
+                    "frequency": "string",
+                    "otc": 0,
+                    "priceKey": "string",
+                    "priceType": "string",
+                    "priceTypeDescription": "string",
+                    "provisioningAction": "string",
+                    "rc": 0
+                  }
+                ]
+              }
+            ],
+            "productCategory": "string",
+            "productId": "string",
+            "productName": "string",
+            "productType": "string",
+            "provisioningAction": "string",
+            "quantity": 0
+          }
+        ],
+        "discountedOtc": 0,
+        "discountedRc": 0,
+        "offerCategory": "string",
+        "offerName": "string",
+        "offerSubType": "string",
+        "offerType": "string",
+        "otc": 0,
+        "productOfferingId": "string",
+        "quantity": 0,
+        "rc": 0
+      }
+    ],
+    "existingTN": [
+      {
+        "productType": "string",
+        "requestedTelephoneNumber": "string",
+        "tnType": "string",
+        "workingTN": "string"
+      }
+    ],
+    "featureDescription": {
+      "ppfcs": [
+        {
+          "action": "string",
+          "billingFeatureCodes": [
+            {
+              "featureCode": "string",
+              "featureCodeDescription": "string"
+            }
+          ],
+          "bmProductName": "string",
+          "bundleCode": "string",
+          "featureCode": "string",
+          "featureDescription": "string",
+          "ftrEffectiveDate": "string",
+          "ftrExpirationDate": "string",
+          "isPrimary": true,
+          "ppEffectiveDate": "string",
+          "ppExpirationDate": "string",
+          "pricePlan": "string",
+          "productSubType": "string",
+          "productType": "string",
+          "recurTermFee": 0,
+          "term": 0,
+          "termFee": 0
+        }
+      ],
+      "subMarketCode": "string"
+    },
+    "finalBillAddressChanged": true,
+    "isFinalBillAddressChanged": true,
+    "productConfiguration": [
+      {
+        "configItems": [
+          {
+            "configDetails": [
+              {
+                "formItems": [
+                  {
+                    "attributeName": "string",
+                    "attributeType": "string",
+                    "attributeValue": [
+                      {
+                        "isDefault": true,
+                        "value": "string"
+                      }
+                    ],
+                    "isMandatory": true
+                  }
+                ],
+                "formName": "string",
+                "isConfigRequired": true
+              }
+            ],
+            "productId": "string",
+            "productName": "string"
+          }
+        ],
+        "productType": "string"
+      }
+    ],
+    "reservedTN": [
+      {
+        "productType": "string",
+        "requestedTelephoneNumber": "string",
+        "tnType": "string",
+        "workingTN": "string"
+      }
+    ],
+    "returnDateOfEquipment": "string",
+    "returnEquipments": [
+      {
+        "isLeasedEquipment": true,
+        "offerCategory": "string",
+        "productId": "string",
+        "productName": "string",
+        "productType": "string",
+        "purchasePrice": {
+          "attributesCombination": {
+            "displayOrder": "string",
+            "isDefault": "string",
+            "name": "string",
+            "uom": "string",
+            "value": "string"
+          },
+          "currencyCode": "string",
+          "discountedOtc": 0,
+          "discountedRc": 0,
+          "otc": 0,
+          "priceType": "string",
+          "rc": 0
+        }
+      }
+    ],
+    "schedule": {
+      "appointmentInfo": {
+        "appointmentId": "string",
+        "commitmentDateTime": "string",
+        "reservationId": "string",
+        "timeSlot": {
+          "endDateTime": "string",
+          "startDateTime": "string"
+        },
+        "timeSlotSource": "string",
+        "timeSlotType": "string"
+      },
+      "apptNotes": {
+        "animalsPresent": true,
+        "electricFence": true,
+        "lockedGate": true,
+        "notes": [
+          {
+            "author": "string",
+            "date": "string",
+            "name": "string",
+            "value": "string"
+          }
+        ]
+      },
+      "assessmentInfo": {
+        "appointmentType": "string",
+        "isAppointmentRequired": true,
+        "isDHPEqpShipped": true,
+        "isHSIAccessoryShipped": true,
+        "isHSIModemShipped": true,
+        "isShippingRequired": true,
+        "shippingCombination": 0
+      },
+      "dates": {
+        "calculatedDueDate": "string",
+        "effectiveBillDate": "string",
+        "finalDueDate": "string",
+        "isCRDAvailable": true,
+        "overrideFlag": true,
+        "requestedDueDate": "string"
+      },
+      "shippingInfo": {
+        "isShipAddrSameAsServiceAddress": true,
+        "shipAddrSameAsServiceAddress": true,
+        "shipDueDate": "string",
+        "shippingAddlInfo": "string",
+        "shippingAddress": {
+          "city": "string",
+          "country": "string",
+          "isValidated": true,
+          "locality": "string",
+          "locationAttributes": {
+            "cala": "string",
+            "isMdu": true,
+            "legacyProvider": "string",
+            "npa": "string",
+            "nxx": "string",
+            "rateCenter": "string",
+            "tarCode": "string",
+            "tta": "string",
+            "wirecenter": "string"
+          },
+          "postCode": "string",
+          "postCodeSuffix": "string",
+          "source": "string",
+          "stateOrProvince": "string",
+          "streetAddress": "string",
+          "streetName": "string",
+          "streetNamePrefix": "string",
+          "streetNrFirst": "string",
+          "streetNrFirstSuffix": "string",
+          "streetType": "string",
+          "subAddress": {
+            "combinedDesignator": "string",
+            "elements": [
+              {
+                "designator": "string",
+                "value": "string"
+              }
+            ],
+            "geoSubAddressId": "string",
+            "source": "string",
+            "sourceId": "string"
+          }
+        },
+        "shippingMethod": "string",
+        "shippingName": "string"
+      }
+    },
+    "serviceAddress": {
+      "addressId": "4454 street",
+      "city": "CO",
+      "country": "USA",
+      "geoAddressId": "string",
+      "geoPoint": [
+        {
+          "accuracy": "string",
+          "coordinateLevel": "string",
+          "latitude": 0,
+          "longitude": 0,
+          "source": "string"
+        }
+      ],
+      "locality": "string",
+      "locationAttributes": {
+        "cala": "string",
+        "isMdu": true,
+        "legacyProvider": "CTL",
+        "npa": "402",
+        "nxx": "998",
+        "rateCenter": "string",
+        "tarCode": "string",
+        "tta": "string",
+        "wirecenter": "string"
+      },
+      "npaNxxList": [
+        {
+          "npa": {
+            "code": "402"
+          },
+          "nxx": {
+            "code": "998"
+          }
+        }
+      ],
+      "postCode": "43016",
+      "postCodeSuffix": "OH",
+      "source": "Martens",
+      "sourceId": "123",
+      "stateOrProvince": "CO",
+      "streetAddress": "123",
+      "streetName": "San",
+      "streetNamePrefix": "1",
+      "streetNrFirst": "S",
+      "streetNrFirstSuffix": "S",
+      "streetNrLast": "string",
+      "streetNrLastSuffix": "string",
+      "streetType": "string",
+      "subAddress": {
+        "combinedDesignator": "string",
+        "elements": [
+          {
+            "designator": "string",
+            "value": "string"
+          }
+        ],
+        "geoSubAddressId": "string",
+        "source": "string",
+        "sourceId": "string"
+      },
+      "timeZone": {
+        "ianaName": "America/Chicag",
+        "isDaylightSavingsTime": true,
+        "name": "Central Standard Time",
+        "offset": "-6"
+      }
+    }
+  },
+  "orderReference": {
+    "businessInteractionId": "string",
+    "cancelDate": "string",
+    "customerOrderNumber": "3000005681",
+    "customerOrderStatus": "HOLD",
+    "customerOrderType": "NEWINSTALL",
+    "customerSegment": "Regular",
+    "customerType": "INDIVIDUAL",
+    "documentControl": {
+      "docLastModifiedDate": "2019-11-15T11:45:43.090Z",
+      "docVersion": "1"
+    },
+    "holdDate": "2019-11-20T11:45:43.090Z",
+    "holdExpirationDate": "2019-11-25T11:45:43.090Z",
+    "lastCustomerOrderNumber": "string",
+    "lastORN": "ORN-9739713612644819",
+    "orderDate": "2019-11-15T11:45:43.090Z",
+    "orderReferenceNumber": "ORN-9739713612644819",
+    "orderVersion": "2",
+    "partyRole": {
+      "partyCsrId": "string",
+      "partyRoleId": "string",
+      "partyRoleName": "string"
+    },
+    "pointOfNoReturn": true,
+    "processInstanceId": "68c65729-079d-11ea-ba60-5a4613b49682",
+    "reason": [
+      {
+        "code": "USD",
+        "currencyCode": "USD",
+        "description": "Held for System Issue Reported",
+        "offerCategory": "INTERNET",
+        "reasonText": "Leaving",
+        "reasonType": "DISCONNECT",
+        "terminationFee": "0",
+        "waiverFlag": "Y"
+      }
+    ],
+    "salesChannel": "ESHOP-Customer Care",
+    "sfdcAccountId": "001R000001PjJDHIA3:a08R000000DJp9pIAD",
+    "sourceSystem": "TOM",
+    "supType": "4"
+  }
+}

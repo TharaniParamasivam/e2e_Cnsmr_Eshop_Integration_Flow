@@ -1,0 +1,196 @@
+{
+	"_id" : ObjectId("5d8db32e43b2a10009a4c84f"),
+	"_class" : "com.ctl.bm.service.tom_orchestrator_business_service.models.ServiceOrderPostReference",
+	"customerServiceOrderNumber" : "CSNO-19626928521552073",
+	"provisioningServiceRequest" : {
+		"sourceSystem" : "BLUEMARBLE",
+		"salesChannel" : "ESHOP-Customer Care",
+		"transactionId" : "19626928623400013",
+		"orderDate" : "2019-09-27T06:57:46.665Z",
+		"timestamp" : "2019-09-27T06:58:53.800Z",
+		"customerServiceOrderType" : "NEW",
+		"csrId" : "1165826",
+		"version" : "1",
+		"customerServiceOrderNumber" : "CSNO-19626928521552073",
+		"csrNotes" : [
+			{
+				"text" : "2019-09-27-order changed to add-INTERNET by 1165826",
+				"date" : "2019-09-27T06:57:46.665Z",
+				"author" : "1165826"
+			},
+			{
+				"text" : "TECH BAN 680613921",
+				"date" : "2019-09-27T06:57:46.665Z",
+				"author" : "Thomas  Hilla"
+			},
+			{
+				"text" : "TECH No. of devices to support 1.",
+				"date" : "2019-09-27T06:57:46.665Z",
+				"author" : "Thomas  Hilla"
+			},
+			{
+				"text" : "TECH HSI speed 15M/750K",
+				"date" : "2019-09-27T06:57:46.665Z",
+				"author" : "Thomas  Hilla"
+			}
+		],
+		"relatedParty" : {
+			"name" : " Thomas Hilla",
+			"phone" : "(423) 2536423",
+			"email" : ""
+		},
+		"customerOrderItems" : {
+			"customerOrderSubItem" : [
+				{
+					"subitemSequenceNo" : 0,
+					"productId" : "EP0172",
+					"rfsId" : "HSI-15M-750K-ADSL2+",
+					"action" : "NEW",
+					"productName" : "HSI Upto 15 Mbps/750 Kbps",
+					"characteristics" : [
+						{
+							"characteristicName" : "SPEED",
+							"characteristicValue" : "15M"
+						},
+						{
+							"characteristicName" : "UPSPEED",
+							"characteristicValue" : "750K"
+						},
+						{
+							"characteristicName" : "Technology",
+							"characteristicValue" : "ADSL2+"
+						},
+						{
+							"characteristicName" : "Product",
+							"characteristicValue" : "HSI"
+						}
+					],
+					"conditions" : [
+						{
+							"conditionName" : "CustomerType",
+							"conditionValue" : "RES"
+						},
+						{
+							"conditionName" : "Standalone",
+							"conditionValue" : "Y"
+						}
+					],
+					"attributeList" : [
+						{
+							"attributeName" : "networkInfrastructureIndicatorCode",
+							"attributeValue" : "FTTN-ETH-A2P"
+						},
+						{
+							"attributeName" : "telephoneno",
+							"attributeValue" : "6087791394"
+						},
+						{
+							"attributeName" : "remoteTerminalDispatch",
+							"attributeValue" : "required",
+							"attributeAction" : "NEW"
+						},
+						{
+							"attributeName" : "declinedTechInstall",
+							"attributeValue" : "false",
+							"attributeAction" : "NEW"
+						},
+						{
+							"attributeName" : "numberOfComputers",
+							"attributeValue" : "1",
+							"attributeAction" : "NEW"
+						},
+						{
+							"attributeName" : "installationType",
+							"attributeValue" : "Standard tech install",
+							"attributeAction" : "NEW"
+						}
+					]
+				},
+				{
+					"subitemSequenceNo" : 1,
+					"productId" : "EP0019",
+					"rfsId" : "MODEM-PURCHASE",
+					"action" : "NEW",
+					"productName" : "MODEM",
+					"characteristics" : [ ],
+					"conditions" : [
+						{
+							"conditionName" : "CustomerType",
+							"conditionValue" : "RES"
+						}
+					],
+					"attributeList" : [
+						{
+							"attributeName" : "modemType",
+							"attributeValue" : "Advanced"
+						},
+						{
+							"attributeName" : "telephoneno",
+							"attributeValue" : "6087791394"
+						}
+					]
+				}
+			]
+		},
+		"serviceAddress" : [
+			{
+				"addressLine1" : "2641 GEORGE ST",
+				"addressLine2" : "",
+				"geoAddressId" : "220728276",
+				"streetAddress" : "2641 GEORGE ST",
+				"streetNr" : "2641",
+				"streetNrSuffix" : "",
+				"streetNrLast" : "",
+				"streetNrLastSuffix" : "",
+				"streetNrFirstSuffix" : "",
+				"subAddress" : {
+					"combinedDesignator" : "APT O"
+				},
+				"streetNamePrefix" : "",
+				"streetName" : "GEORGE",
+				"streetType" : "ST",
+				"locality" : "LA CROSSE",
+				"city" : "LA CROSSE",
+				"stateOrProvince" : "WI",
+				"postCode" : "54603",
+				"country" : "USA",
+				"sourceSystem" : {
+					"sourceSystemId" : "41002820081122010541",
+					"source" : "MARTENS"
+				},
+				"streetSuffix" : "",
+				"locationAttributes" : {
+					"clli8" : "LCRSWIXA",
+					"wireCenter" : "LCRSWIXA",
+					"tta" : ""
+				},
+				"designator" : [
+					{
+						"name" : "APT",
+						"value" : "O"
+					}
+				]
+			}
+		],
+		"schedule" : {
+			"dueDate" : "2019-09-30",
+			"customerRequestedDueDateCode" : "X",
+			"appointment" : [
+				{
+					"_id" : "100220371",
+					"startDateTime" : "2019-09-30T08:00:00.000Z",
+					"endDateTime" : "2019-09-30T12:00:00.000Z",
+					"timeZone" : "Central Standard Time",
+					"commitmentDateTime" : "2019-09-30T14:34:00.000Z"
+				}
+			]
+		},
+		"customerInfo" : {
+			"firstName" : "Thomas",
+			"lastName" : "Hilla",
+			"customerType" : "Residential",
+			"subscriberSubType" : "Retail",
+			"BAN" : "680613921"
+		}
+	}
+}

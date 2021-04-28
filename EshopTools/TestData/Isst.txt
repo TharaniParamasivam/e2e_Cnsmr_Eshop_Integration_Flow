@@ -1,0 +1,16 @@
+{
+  "ban": "680660224",
+  "customerOrderType": "NEWINSTALL",
+  "fetureDescription": [
+    {
+      "action": "ADD",
+      "featureCode": "0514R",
+      "pricePlan": "DEFINR",
+      "productType": "QW"
+    }
+  ],
+  "finalDueDate": "2019-11-16T00:00:00.000Z",
+  "orderDate": "2019-11-13T17:06:21.000Z",
+  "orderNumber": "2000005332",
+  "partyCsrId": "string"
+}

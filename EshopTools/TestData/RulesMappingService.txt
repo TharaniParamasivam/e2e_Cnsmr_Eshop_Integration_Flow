@@ -1,0 +1,9 @@
+{
+  "usocs": [
+    {
+      "customerType": "INDIVIDUAL",
+      "state": "CO",
+      "usoc": "EFXNS"
+    }
+  ]
+}

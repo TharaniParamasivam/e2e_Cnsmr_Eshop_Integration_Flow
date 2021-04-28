@@ -1,0 +1,15 @@
+{
+  "carrier": "string",
+  "date": "string",
+  "deliveryAddress": "string",
+  "materialId": "string",
+  "model": "string",
+  "moniker": "string",
+  "orderDeleted": true,
+  "orderNumber": "1000065973",
+  "orderNumberLine": "string",
+  "quantity": 0,
+  "requestId": "string",
+  "trackingNumber": "string",
+  "type": "string"
+}

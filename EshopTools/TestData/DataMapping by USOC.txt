@@ -1,0 +1,8 @@
+{
+  "request": [
+    {
+      "rfsid": "MODEM-LEASE",
+      "usoc": "string"
+    }
+  ]
+}

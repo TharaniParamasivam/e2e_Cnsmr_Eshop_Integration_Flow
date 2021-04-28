@@ -1,0 +1,14 @@
+{
+  "martensOrderStatusRequest": {
+    "customerInfo": {
+      "ban": "680613921"
+    },
+    "customerServiceOrderNumber": "string",
+    "customerServiceOrderType": "CSNO-19626928521552073",
+    "orderDate": "string",
+    "sourceSystem": "TOM",
+    "supType": "string",
+    "timestamp": "string",
+    "transactionId": "string"
+  }
+}

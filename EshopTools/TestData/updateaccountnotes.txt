@@ -1,0 +1,15 @@
+{
+  "accountNotes": {
+    "baid": "PPB11036505",
+    "listOfNotes": {
+      "notes": [
+        {
+          "agentOrUserID": "ab60427",
+          "category": "CSR_PROFILE",
+          "eventType": "Start Billing",
+          "text": "Order:1000021744:Additional Comments:Test Additional Comments for Prepaid"
+        }
+      ]
+    }
+  }
+}

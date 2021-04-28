@@ -1,0 +1,8 @@
+{
+  "customerOrderNumber": "2000005681",
+  "customerOrderType": "NEWINSTALL",
+  "orderDate": "2019-11-15T11:45:43.090Z",
+  "orderVersion": "2",
+  "sourceSystem": "TOM",
+  "supType": "4"
+}

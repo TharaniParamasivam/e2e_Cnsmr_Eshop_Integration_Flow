@@ -1,0 +1,49 @@
+{
+   "customerServiceOrderNumber":"CSNO-3926402840161906",
+   "customerServiceOrderStatus":"COMPLETED",
+   "customerServiceOrderType":"string",
+   "dueDate":"string",
+   "error":{
+      "errorCode":"string",
+      "errorMessage":"string",
+      "errorType":"string"
+   },
+   "mainTelephoneNumber":"string",
+   "orders":[
+      {
+         "PCSR":{
+
+         },
+         "correctionList":[
+
+         ],
+         "errorInfo":[
+            {
+               "errorCode":"string",
+               "errorMessage":"string",
+               "errorType":"string"
+            }
+         ],
+         "moi":{
+
+         },
+         "orderNumber":"T100000212",
+         "orderType":"MARTENS",
+         "status":"Completed"
+      }
+   ],
+   "pairBondedTelephoneNumber":"string",
+   "provisioningNotes":[
+      {
+         "author":"string",
+         "date":"string",
+         "text":"string"
+      }
+   ],
+   "returnCode":"string",
+   "sourceSystem":"string",
+   "supType":"string",
+   "timestamp":"string",
+   "transactionId":"string",
+   "version":"string"
+}

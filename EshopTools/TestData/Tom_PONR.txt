@@ -1,0 +1,14 @@
+{
+  "pointOfNoReturnRequest": {
+    "customerInfo": {
+      "BAN": "680613921"
+    },
+    "customerServiceOrderNumber": "CSNO-19626928521552073",
+    "customerServiceOrderType": "string",
+    "orderDate": "string",
+    "sourceSystem": "TOM",
+    "supType": "string",
+    "timestamp": "string",
+    "transactionId": "string"
+  }
+}

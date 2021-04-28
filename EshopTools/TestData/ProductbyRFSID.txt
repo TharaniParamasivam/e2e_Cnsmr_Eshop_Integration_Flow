@@ -1,0 +1,8 @@
+{
+  "request": [
+    {
+      "productName": "MODEM",
+      "rfsid": "MODEM-PURCHASE"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+   "accountId":"PPB11003201",
+   "serviceAddress":{
+      "streetAddress":"107 N COOK ST,UNIT 427",
+      "city":"PORTLAND",
+      "stateProvince":"OR",
+      "postalCode":"97227",
+      "country":"USA"
+   },
+   "billingAddress":{
+      "streetAddress":"107 N COOK ST,UNIT 427",
+      "city":"PORTLAND",
+      "stateProvince":"OR",
+      "postalCode":"97227",
+      "country":"USA"
+   }
+}

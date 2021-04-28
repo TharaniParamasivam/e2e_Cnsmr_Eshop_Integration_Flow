@@ -1,0 +1,24 @@
+{
+  "dataMappingRequest": {
+    "dataMappingObject": [
+      {
+        "characteristics": [
+          {
+            "name": "string",
+            "seqNo": "string",
+            "value": "string"
+          }
+        ],
+        "conditions": [
+          {
+            "name": "string",
+            "value": "string"
+          }
+        ],
+        "id": "CSID-20178436886861795_1_1",
+        "productFamilyName": "string",
+        "sourceSystem": "BLUE MARBLE"
+      }
+    ]
+  }
+}

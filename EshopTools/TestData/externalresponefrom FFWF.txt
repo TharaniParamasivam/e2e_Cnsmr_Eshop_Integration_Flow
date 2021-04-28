@@ -1,0 +1,20 @@
+{
+  "BMShippingRequest": {
+    "ban": "680613921",
+    "dateOfSignOff": "string",
+    "macId": "string",
+    "repairInd": "string",
+    "serialNo": "string",
+    "serviceGroup": "string",
+    "shipMethod": "string",
+    "subServiceGroup": "string",
+    "timeOfSignOff": "string",
+    "trackingId": "string",
+    "transactionId": "string",
+    "wtn": "string"
+  },
+  "customerServiceOrderNumber": "CSNO-19626928521552073",
+  "isReturnModemRequest": "string",
+  "latestVersionNumber": "string",
+  "transactionId": "string"
+}
