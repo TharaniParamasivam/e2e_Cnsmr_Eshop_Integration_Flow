@@ -8,6 +8,13 @@
 					<field name="tbx_username" value="AB72075" type="mandatory" />
                     <field name="tbx_password" value="Sept~%1234" type="mandatory" />    
 				</container>
+				</container>
+				<field name="MYAurl" value="https://myajws-test1.centurylink.com/eam/addAccount.do"></field>
+			    <container name="MYALoginPage">
+				<container name="Valid">
+					<field name="tbx_username_MYA" value="test00790" type="mandatory" />
+                    <field name="tbx_password_MYA" value="Welcome5" type="mandatory" />    
+				</container>		
 			</container>
 			</container>
 		

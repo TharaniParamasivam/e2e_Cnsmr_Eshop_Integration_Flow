@@ -197,9 +197,10 @@ public class OrderSummarySteps extends Steps {
 		row.createCell(0).setCellValue(Product);
 		row.createCell(3).setCellValue(WEBSOP);
 		row.createCell(4).setCellValue(ENVUrl);
-//		FileOutputStream fileOut = new FileOutputStream("..\\EShopTests\\target\\OrderDataDetails.xlsx");
-//		workbook.write(fileOut);
-//		fileOut.close();
+		// FileOutputStream fileOut = new
+		// FileOutputStream("..\\EShopTests\\target\\OrderDataDetails.xlsx");
+		// workbook.write(fileOut);
+		// fileOut.close();
 		/*
 		 * Cell cell; cell = ((Sheet) orderfile).getRow(newrow).getCell(0);
 		 * cell.setCellType(Cell.CELL_TYPE_STRING); cell.setCellValue("Result");
@@ -378,7 +379,7 @@ public class OrderSummarySteps extends Steps {
 	 * Complete Order Web Tool Code - Nitish
 	 */
 	@Step
-	public void Web_Tool_to_Complete_Provisioning_of_the_Order_in_Env(String envName,String territory) {
+	public void Web_Tool_to_Complete_Provisioning_of_the_Order_in_Env(String envName, String territory) {
 
 		slf4jLogger.info("Open Web Tool up By New Tab ....");
 		JavascriptExecutor js = (JavascriptExecutor) getDriver();
@@ -394,43 +395,38 @@ public class OrderSummarySteps extends Steps {
 		slf4jLogger.info("Selected Enviroment in Web Tool as " + envName);
 		orderSummaryPage.Order_number.sendKeys("1010450771");
 		slf4jLogger.info("Entered Order Number in Web Tool as " + ordernum);
-		if(territory.equals("LQ"))
-		{
-		Select sel=new Select(getDriver().findElement(By.xpath("//select[@id='choices']")));
-		sel.selectByIndex(3);
-		orderSummaryPage.Submit.click();
-		}
-		else
-		{
+		if (territory.equals("LQ")) {
+			Select sel = new Select(getDriver().findElement(By.xpath("//select[@id='choices']")));
+			sel.selectByIndex(3);
+			orderSummaryPage.Submit.click();
+		} else {
 			orderSummaryPage.Submit.click();
 		}
-		
+
 		slf4jLogger.info("Clicked Submit Button");
 		slf4jLogger.info("Waiting 3 minutes for Order to be completed");
-		waitABit(180000);
+		if (territory.equals("LQ")) {
+			waitABit(40000);
+		} else {
+			waitABit(110000);
+		}
 		getDriver().switchTo().window(parentWindow);
 		slf4jLogger.info(".... Web Tool Execution Done");
 	}
 
-	
-
-
-		        
-		
-	
-
 	@Step
-	 public void integrationScriptInvoke()
-	 {
-//		ExcelUtils.ReadExcel1();
-	 try {
-	 Runtime.getRuntime().exec( "wscript C:\\Users\\ab72075\\Desktop\\Integration_UFT.vbs");
-	 waitABit(700000);
-	 System.out.println("Integration Success");
+	public void integrationScriptInvoke() {
+		// ExcelUtils.ReadExcel1();
+		try {
+			ProcessBuilder processBuilder = new ProcessBuilder("..\\EshopTools\\src\\test\\resources\\Integration_UFT.bat").inheritIO();
+			processBuilder.start();
+//			Runtime.getRuntime().exec("wscript C:\\Users\\ab72075\\Desktop\\Integration_UFT.vbs");
+			waitABit(800000);
+			System.out.println("Integration Success");
 
-	 }catch( IOException e ) {
-	 System.out.println(e);
-	 System.exit(0);
-	 }
-}
+		} catch (IOException e) {
+			System.out.println(e);
+			System.exit(0);
+		}
+	}
 }
