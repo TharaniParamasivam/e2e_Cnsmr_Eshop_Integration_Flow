@@ -109,7 +109,7 @@ public class ExistingProductsSteps extends Steps {
 
 		Assert.assertEquals("pass", arrOfStrrfirst[0].toString(), arrOfStrrrfirst[0].toString());
 		Assert.assertEquals("pass", arrOfStrrsecond[0].toString(), arrOfStrrrsecond[0].toString());
-		Assert.assertNotEquals("pass", arrOfStrrfirst[0].toString(), arrOfStrrsecond[0].toString());
+		Assert.assertNotSame("pass", arrOfStrrfirst[0].toString(), arrOfStrrsecond[0].toString());
 		// for (String a : arrOfStr){
 		// System.out.println(a); }
 

@@ -1,5 +1,11 @@
 package com.ctl.it.qa.eshop.tests.stepdefinitions;
 
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.json.simple.parser.ParseException;
+
 import com.ctl.it.qa.eshop.tools.steps.FFWFCompleteOrderSteps;
 import com.ctl.it.qa.eshop.tools.steps.OrderSummarySteps;
 
@@ -89,10 +95,18 @@ public class OrderSummaryPageStepDefinition {
 
 	@Then("^I save the Order and Ban in the excel_sheet$")
 	public void i_save_the_Order_and_BAN_in_the_excel_sheet() throws Exception {
-		orderSummarySteps.save_the_Order_and_BAN();
-
+		orderSummarySteps.save_the_Order_and_BAN();		
 	}
 	
+	@Then("I save the Order and Ban in the excel_sheet with respect to {string},{string}")
+	public void i_save_the_Order_and_Ban_in_the_excel_sheet_with_respect_to(String territory,String EnvName) throws EncryptedDocumentException, InvalidFormatException, IOException, ParseException {
+		orderSummarySteps.save_the_Order_and_BAN_JSON(territory,EnvName);
+	}
+	
+	@Then("I complete the provisioning")
+	public void i_complete_the_provisioning() throws InterruptedException {
+		orderSummarySteps.integrationScriptInvoke();
+	}
 
 	
 	@Then("I Use Web Tool to Complete Provisioning of the Order in Env {string},{string}")
@@ -100,9 +114,6 @@ public class OrderSummaryPageStepDefinition {
 		orderSummarySteps.Web_Tool_to_Complete_Provisioning_of_the_Order_in_Env(EnvName,territory);
 	}
 
-	@Then("I complete the order in websop")
-	public void i_complete_the_order_in_websop() {
-		orderSummarySteps.integrationScriptInvoke();
-	}
+
 
 }

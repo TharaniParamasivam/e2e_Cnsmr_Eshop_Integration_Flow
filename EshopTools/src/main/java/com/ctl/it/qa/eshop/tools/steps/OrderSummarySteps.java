@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,6 +23,10 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -58,7 +64,7 @@ public class OrderSummarySteps extends Steps {
 	public static String dbURI = null;
 	public static MongoClient mongoClient;
 	public static String CSNO = null;
-	public static String WEBSOP = null;
+	public static String WEBSOP;
 
 	public static FileInputStream fis = null;
 	public static XSSFWorkbook workbook = null;
@@ -211,6 +217,31 @@ public class OrderSummarySteps extends Steps {
 		// }
 		// }
 
+	}
+
+	public void save_the_Order_and_BAN_JSON(String territory,String EnvName)
+			throws EncryptedDocumentException, InvalidFormatException, IOException, ParseException {
+
+		try (FileReader reader = new FileReader("..\\EshopTools\\src\\test\\resources\\OrderDetailsUpdate.json")) {
+			// Read JSON file
+			JSONParser parser = new JSONParser();
+			JSONObject data = (JSONObject) parser.parse(reader);
+			data.put("Product", Product);
+			data.put("Territory", territory);
+			data.put("CustomerOrderNumber", ordernum);
+			data.put("BAN", accountnum);
+			data.put("TomOrderId", WEBSOP);
+			data.put("Env", EnvName);
+			data.put("Status", "");
+			FileWriter file = new FileWriter("..\\EshopTools\\src\\test\\resources\\OrderDetailsUpdate.json");
+			file.write(data.toJSONString());
+			file.flush();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ParseException e1) {
+			e1.printStackTrace();
+		}
 	}
 
 	@Step
@@ -393,7 +424,7 @@ public class OrderSummarySteps extends Steps {
 		slf4jLogger.info("Web Tool Complete Order Launched");
 		orderSummaryPage.Environment.selectByValue(envName);
 		slf4jLogger.info("Selected Enviroment in Web Tool as " + envName);
-		orderSummaryPage.Order_number.sendKeys("1010450771");
+		orderSummaryPage.Order_number.sendKeys(ordernum);
 		slf4jLogger.info("Entered Order Number in Web Tool as " + ordernum);
 		if (territory.equals("LQ")) {
 			Select sel = new Select(getDriver().findElement(By.xpath("//select[@id='choices']")));
@@ -415,13 +446,13 @@ public class OrderSummarySteps extends Steps {
 	}
 
 	@Step
-	public void integrationScriptInvoke() {
+	public void integrationScriptInvoke() throws InterruptedException {
 		// ExcelUtils.ReadExcel1();
 		try {
 			ProcessBuilder processBuilder = new ProcessBuilder("..\\EshopTools\\src\\test\\resources\\Integration_UFT.bat").inheritIO();
-			processBuilder.start();
-//			Runtime.getRuntime().exec("wscript C:\\Users\\ab72075\\Desktop\\Integration_UFT.vbs");
-			waitABit(800000);
+			Process process = processBuilder.start();
+			waitABit(500000);
+			process.destroy();
 			System.out.println("Integration Success");
 
 		} catch (IOException e) {

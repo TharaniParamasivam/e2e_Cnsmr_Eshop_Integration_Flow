@@ -16,7 +16,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 
 @CucumberOptions(features = "src/test/resources/features", plugin = { "pretty", "json:target/Reports/EShopCucumberReport.json" ,"html:target/Reports/EShopHTMLReport" },
-		dryRun=false,tags = { "@HSIPOTS_NI_E2E_Shakeout_Postpaid_LC" }) 
+		dryRun=false,tags = { "@HSIPOTS_NI_E2E_Shakeout_Postpaid_LQ" }) 
 				// A few other tags: @EshopTestScripts @EShopSanity @EShopFunctional @eshopcentral @EShopSatandaloneOrderCompletionSanity
 
 public class RunCukesTest {
